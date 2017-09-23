@@ -264,14 +264,14 @@
                     <div class="col-md-3 col-sm-6 project-item ">
         <div class="thumb">
                                   <div class="image">
-                                    <iframe width="250" height="215" src="https://www.youtube.com/embed/wa78qxQCKgo" style="margin-left: 18px" frameborder="1" allowfullscreen></iframe>
+                                    <iframe class="iframe" width="250" height="215" src="https://www.youtube.com/embed/wa78qxQCKgo" style="margin-left: 18px" frameborder="1" allowfullscreen></iframe>
                                   </div>  
                               </div>
                             </div>    
                                        <div class="col-md-3 col-sm-6 project-item m">
         <div class="thumb">
                                   <div class="image">
-                                    <iframe width="250" height="215" src="https://www.youtube.com/embed/wOSLtqxD-bM" style="margin-left: 18px"frameborder="1" allowfullscreen></iframe>
+                                    <iframe class="iframe" width="250" height="215" src="https://www.youtube.com/embed/wOSLtqxD-bM" style="margin-left: 18px"frameborder="1" allowfullscreen></iframe>
                                   </div>  
                               </div>
                             </div>         
@@ -279,14 +279,14 @@
                        <div class="col-md-3 col-sm-6 project-item">
         <div class="thumb">
                                   <div class="image">
-                                    <iframe width="250" height="215" src="https://www.youtube.com/embed/tq3vMXJH1HM"  style="margin-left: 18px"frameborder="1" allowfullscreen></iframe>
+                                    <iframe class="iframe" width="250" height="215" src="https://www.youtube.com/embed/tq3vMXJH1HM"  style="margin-left: 18px"frameborder="1" allowfullscreen></iframe>
                                   </div>  
                               </div>
                             </div>         
                  <div class="col-md-3 col-sm-6 project-item">
         <div class="thumb">
                                   <div class="image">
-                                    <iframe width="250" height="215" src="https://www.youtube.com/embed/1i1Mv-cNy3w" style="margin-left: 18px" frameborder="1" allowfullscreen></iframe>
+                                    <iframe class="iframe"  width="250" height="215" src="https://www.youtube.com/embed/1i1Mv-cNy3w" style="margin-left: 18px" frameborder="1" allowfullscreen></iframe>
                                   </div>  
                               </div>
                             </div>     
@@ -333,7 +333,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="row">
-                      <form id="contact" action="" method="post">
+                      <div id="disqus_thread"></div>
+                      <!-- <form id="contact" action="" method="post">
                         <div class="col-md-6">
                           <fieldset>
                             <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
@@ -354,7 +355,7 @@
                             <button type="submit" id="form-submit" class="btn">Send Message</button>
                           </fieldset>
                         </div>
-                      </form>
+                      </form> -->
                     </div>
                 </div>
             </div>
@@ -404,6 +405,25 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src ="js/vendor/notify.min.js"></script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <script id="dsq-count-scr" src="//tujatj-me.disqus.com/count.js" async></script>
+    <script>
+    /**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+// var disqus_config = function () {
+// this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+// this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+// }
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://tujatj-me.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+                            
     <script type="text/javascript">
     $('#form-submit').click( function (){
     $.notify("Your Message has been submitted!", "success" );
